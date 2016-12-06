@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context="hhzmy.bwei.com.hhzme.shangpinxiangqing.XiangqingActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="20dp"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp"
+    android:paddingTop="20dp">
+
+    <TextView
+        android:id="@+id/tuwenxiangqing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="图文详情"
+        android:textColor="#f29400" />
+
+    <TextView
+        android:id="@+id/guigecanshu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="规格参数"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/baozhuangshouhou"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="包装售后"
+        android:textColor="#000000" />
+</LinearLayout>
+
+<hhzmy.bwei.com.hhzme.zidingyi.ViewPagerDemo
+    android:id="@+id/xviewpager"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+</hhzmy.bwei.com.hhzme.zidingyi.ViewPagerDemo>
+
+</LinearLayout>

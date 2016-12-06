@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical"
+    tools:context="com.bwei.hhzmy.fragment.FenleiActivity">
+
+
+    <LinearLayout
+        android:id="@+id/shousuoyemianT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:padding="7dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#eeeeee"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:src="@mipmap/icon_search_home" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="好奇"
+                android:textColor="#666" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d9d9d9" />
+
+<!--下面的部分-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#5bbb"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycle_line"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#fff"></android.support.v7.widget.RecyclerView>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycle_context"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="#f2f2f2"></android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+    <!--&lt;!&ndash;上面的部分&ndash;&gt;
+    <LinearLayout
+        android:id="@+id/shousuoyemianT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:padding="7dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#eeeeee"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:src="@mipmap/icon_search_home" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="好奇"
+                android:textColor="#666" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d9d9d9" />
+    &lt;!&ndash;下面的部分&ndash;&gt;
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:orientation="vertical">
+            &lt;!&ndash;宝宝奶粉&ndash;&gt;
+            <LinearLayout
+                android:id="@+id/bbnf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/bbnfLine"
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:background="#f29400" />
+
+                <TextView
+                    android:id="@+id/bbnfText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:padding="11dp"
+                    android:text="宝宝奶粉"
+                    android:textColor="#f29400" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="2dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="2dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#d9d9d9" />
+            </LinearLayout>
+
+            &lt;!&ndash;宝宝尿裤&ndash;&gt;
+            <LinearLayout
+                android:id="@+id/bbnk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/bbnkLine"
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/bbnkText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="11dp"
+                    android:text="宝宝尿裤"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="2dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="2dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#d9d9d9" />
+            </LinearLayout>
+            &lt;!&ndash;辅食营养&ndash;&gt;
+
+            <LinearLayout
+                android:id="@+id/fsyy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/fsyyLine"
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/fsyyText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="11dp"
+                    android:text="辅食营养"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="2dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="2dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#d9d9d9" />
+            </LinearLayout>
+            &lt;!&ndash;宝宝用品&ndash;&gt;
+            <LinearLayout
+                android:id="@+id/bbyp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/bbypLine"
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/bbypText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="11dp"
+                    android:text="宝宝用品"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="2dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="2dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#d9d9d9" />
+            </LinearLayout>
+            &lt;!&ndash;宝宝玩乐&ndash;&gt;
+            <LinearLayout
+                android:id="@+id/bbwl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/bbwlLine"
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/bbwlText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="11dp"
+                    android:text="宝宝玩乐"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="2dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="2dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#d9d9d9" />
+            </LinearLayout>
+            &lt;!&ndash;妈妈专区&ndash;&gt;
+            <LinearLayout
+                android:id="@+id/mmzq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/mmzqLine"
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/mmzqText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="11dp"
+                    android:text="妈妈专区"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="2dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="2dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#d9d9d9" />
+            </LinearLayout>
+            &lt;!&ndash;童装童鞋&ndash;&gt;
+            <LinearLayout
+                android:id="@+id/tztx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tztxLine"
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/tztxText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="11dp"
+                    android:text="童装童鞋"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="2dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="2dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#d9d9d9" />
+            </LinearLayout>
+            &lt;!&ndash;图书天地&ndash;&gt;
+            <LinearLayout
+                android:id="@+id/tstd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tstdLine"
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/tstdText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="11dp"
+                    android:text="图书天地"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="2dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="2dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#d9d9d9" />
+            </LinearLayout>
+            &lt;!&ndash;童车童床&ndash;&gt;
+            <LinearLayout
+                android:id="@+id/tctc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tctcLine"
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/tctcText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="11dp"
+                    android:text="童车童床"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <hhzmy.bwei.com.hhzme.zidingyi.ViewPagerDemo
+                android:id="@+id/flViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </hhzmy.bwei.com.hhzme.zidingyi.ViewPagerDemo>
+
+        </LinearLayout>
+    </LinearLayout>-->
+</LinearLayout>
